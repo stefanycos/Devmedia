@@ -1,2 +1,2 @@
 # Devmedia
-Repository used to post my Alura course codes.
+Repository used to post my Devmedia course codes.
