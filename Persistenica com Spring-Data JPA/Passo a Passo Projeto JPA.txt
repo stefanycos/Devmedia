@@ -1,0 +1,37 @@
+Criação do Projeto no Eclipse
+
+1º --- Criar Projeto --------------------------------------------
+- File > New > Other > Maven > Maven Project
+- Next > Next
+** Group Id: Exemplo br.com.devmedia
+** Artifact Id: Exemplo rev-jpa
+** Package: Exemplo br.com.devmedia.revjpa
+- Finish
+
+2º --- Adicionar Dependencias ------------------------------------
+- Abrir arquivo pom.xml
+- Adicionar dependencia Hibernate JPA
+- Adicionar dependencia do Banco de dados
+
+3º --- Adicionar Arquivo de Configuração JPA ---------------------
+- Criar pasta chamada resource em: src > main
+- Criar um projeto JPA (JPA Project)
+- Copiar a pasta META-INF do projeto JPA para o projeto Maven
+- Depois pode deletar o projeto
+
+4º --- Configurar persistence.xml --------------------------------
+	<persistence-unit name="REVJPA" transaction-type="RESOURCE_LOCAL">
+	
+		<provider>org.hibernate.ejb.HibernatePersistence</provider>
+		<properties>
+			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/rev-jps-db" />
+			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
+			<property name="javax.persistence.jdbc.user" value="root" />
+			<property name="javax.persistence.jdbc.password" value="1234" />
+			<property name="hibernate.dialect" value="hibernate.dialect.MySQLDialect" />
+			<property name="hibernate.show_sql" value="true" />
+			<property name="hibernate.hbm2dll.auto" value="update" />
+		</properties>
+	</persistence-unit>
+
+5º --- Criar a classe Util ------------------------------------

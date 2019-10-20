@@ -1,0 +1,15 @@
+MVC
+** É um padrão arquitetural que divide a aplicação em três camadas: Model, View, Controller
+
+Model: Modela as entidades do sistema, e lida com todos os dados da aplicação.
+
+View: Interface de Comunicação com o Usário. Ocorre a interação do usuário com o sistema.
+	Ex: HTML, CSS, JavaScript, Formulário, Graficos
+
+Controller: recebe as requisições do usuário, trata e responde adequadamente.
+	Ex: pede as informações que o usuário solicitou ao model e mostra na view, da mesma forma quando o usuário informa dados, o controller passa as informações para o model e o model persiste no banco de dados.
+
+Vantagem
+** Se por exemplo for preciso mudar os elementos visuais, não será preciso mudar o cotroller nem o view. Da mesma forma se for preciso mudar a forma que o controller responde a solitação de do usuário, muda-se só o controller, o mesmo acontece com o model.
+
+

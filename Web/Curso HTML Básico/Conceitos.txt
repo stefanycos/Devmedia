@@ -1,0 +1,24 @@
+O QUE É SEO?
+
+* é uma sigla para Search Engine Optimization, ou seja, otimização para sistemas de busca
+
+
+BLOCKQUOTE
+
+* Serve para realizar citações de outras fontes ou ainda de textos longos, podemos utilizar esta tag.
+* Temos também como atributo o elemento "citar", que leva como valor a URL do site de onde estamos tiranso o texto.
+* Em HTML 4.01 ele deve ser utilziado para gramdes trechos de textos.
+* Em HTML 5 deve ser usado para citar trexcchos de outra fonte (site).
+
+
+IMAGE MAP
+
+* Mapas de imagens são formas de subdividir uma imagem grande em varios links, desta forma podemos
+mapear uma imagem e dizer ao browser que, ao clicar em uma determinada região da imagem, devems redirecionar o usuario para um determinado link.
+
+
+*** Site para criar formulario de forma pratica
+http://br.foxyform.com
+
+**** Site para pegar Codigo de Slider
+http://basic-slider.com/

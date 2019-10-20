@@ -1,0 +1,38 @@
+@Entity
+** Utilizada para dizer que a classe é uma entidade do banco de dados
+
+@Table(name = "PERSONS")
+** Diz a qual tabela essa classe corresponde no banco de dados
+** Se não colocarmos esta anotação, o framework tenta buscar no banco a tabela com o mesmo nome da classe
+-- Propriedades de uma Tabela:
+**** ADICIONANDO CONSTRAINTS
+versão 2.1 < uniqueConstraints = {@UniqueConstraint(columnNames="Lista de Colunas, Coluna 1, Coluna 2", name = "IDX_UNIQUE" )}
+versão 2.1 > indexes = {@Index(ColumnList = "Coluna 1, Coluna 2", name = "IDX_BLABLA", unique = true)} 
+******* Ambas tem a mesma função, porem a utlização depende da versão do framework JPA *******
+
+@Id
+** Informa que o atributo é um Id, ou seja, a chave primaria da tabela
+** Se não colocarmos nome, o nome da linha no banco de dados fica com o mesmo nome do atributo da classe
+
+@GeneratedValue (strategy = GenerationType.IDENTITY)
+** Informa qual tipo de incremento será utlizado no banco
+Ex:
+	@Id
+	@GeneratedValue (strategy = GenerationType.IDENTITY)
+	@Column(name = "ID_PERSON")
+	
+
+@Column(name = "nomeDoCampo")
+** Nome que o campo terá no banco de dados
+-- Propriedades de uma Coluna:
+nullable = false/true (aceita ou não nullos) - valor padrão true
+lenght = 30 (tamanho do campo)
+Ex: 
+	@Column(name = "NAME", nullable = false, lenght = 30 )
+	private String nome;
+
+
+@Enumerated(EnumType.STRING)
+@Column(name = TYPE_PHONE, nullable = false)
+** Utilzada para mapear um Enum, dizendo que tipo de dados queremos salvar no banco de dados
+

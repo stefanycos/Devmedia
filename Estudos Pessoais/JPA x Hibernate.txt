@@ -1,0 +1,13 @@
+JDBC - Java DataBase Connectivity
+* é uma API, um conjunto de classes e interfaces do Java, que utilizamos para comunicação e transações com o Banco de Dados.
+
+ORM - Object-Relational Mapping
+* é um framework criado para facilitar a comunicação com o banco de dados, onde o Object(Objeto) é o código Java que esta orientado a objeto e Relational(Relacional) é porque trabalhasse com banco de dados relacional(MySQL, SQL Server, PostgreSQL etc)
+
+JPA - Java Persistence API
+* é uma coleção de classes e metodos voltados para armazenar persistentemente as vastas quantidades de dados em um banco de dados.
+
+** Os frameworks ORM (EclipseLink, Hibernate TopLink), são frameworks desenvolvidos com base na especificação JPA
+
+** Essa especificação existe para criar uma padronização entre as interfaces dos frameworks ORM, ou seja, da especificação, você pode um dia trocar de Hibernate para EclipseLink sem precisar mudar seu código, pois essas duas Frameworks implementam a especificação JPA
+

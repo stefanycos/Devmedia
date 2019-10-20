@@ -1,0 +1,25 @@
+Angular JS é um Framework
+
+* É mantido pelo Google e possui diversas funcionalidades diferentes e interessantes
+
+* DataBind: reflete o valor de uma variavel na memória,
+Templates e diversas caracteristicas.
+
+* Trabalha com MVC
+* O AngularJS é desenvolvido usando JavaScript
+
+* As TAGs ou expressões começam com ng...
+Ex: ngBind, para diferenciar de outras linguagens como JavaScript
+
+* ngBind: Quando atualiza-se o valor da variavel, propaga automaticamente em toda a aplicação onde a variavel esta sendo usada
+
+Modulos
+
+* O angularJS é modularizado, e como se fosse um conjunto de aplicações
+
+
+Controller
+
+* Controller é um trecho de código que vai controlar uma parte de nossa aplicação. Ele pode conter diversas funcionalidades, tais como funções e regras de negocios.
+
+*

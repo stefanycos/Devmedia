@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Curso Bootstrap3 - Devmedia</title>
+        
+        <!-- define a viewport -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+        <meta charset="utf-8">
+        
+        <!-- adicionar CSS Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" media="all">
+        
+        <!-- css personalizado -->
+        <link href="css/estilo.css" rel="stylesheet" media="all">
+    </head>
+    <body>
+        
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-xs-12">
+                    <h1 class="visible-print-block">Exibir somente na impressão da página</h1>
+                    <h1 class="hidden-print">Exibir somente na página</h1>
+                    <a href="#" class="btn btn-danger hidden-print">Imprimir página</a>
+                </div>
+                
+                <div class="col-xs-12 bg-color-padding">
+                    
+                    <h1>Responsive Utilities</h1>
+                    
+                    <p class="bg-primary visible-xs-block">Você está na resolução XS</p>
+                    <p class="bg-success visible-sm-block">Você está na resolução SM</p>
+                    <p class="bg-danger visible-md-block">Você está na resolução MD</p>
+                    
+                    <a href="#" class="btn btn-default hidden-xs hidden-sm">Acesse nossa versão mobile!</a>
+                    
+                </div>
+                
+                <div class="col-xs-12 bg-color-padding">
+                    
+                    <h1>Tipos</h1>
+                    
+                    <a href="#" class="visible-sm-block visible-md-block btn btn-primary">Block</a>
+                    <a href="#" class="visible-sm-block visible-md-block btn btn-primary">Block</a>
+                    
+                    <a href="#" class="visible-sm-inline visible-md-inline btn btn-success">Inline</a> 
+                    <a href="#" class="visible-sm-inline visible-md-inline btn btn-success">Inline</a>
+                    
+                    <a href="#" class="visible-sm-inline-block visible-md-inline-block btn btn-danger">Inline-block</a>
+                    <a href="#" class="visible-sm-inline-block visible-md-inline-block btn btn-danger">Inline-block</a>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <script src="js/jquery-1.11.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,56 @@
+****Criação de um mapeamento OneToMany
+****Uma Pessoa tem Muitos Telefones
+**** Mapeamento da classe Person e Phone (Exemplo)
+
+
+
+****** Classe Phone:
+@Entity
+@Table(name = "PHONES")
+public class Phone implements Serializable{
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "ID_PHONE")	
+	private Long id;
+	
+	@Enumerated(EnumType.STRING)
+	@Column(name = TYPE_PHONE, nullable = false)
+	private TypePhone type;
+
+	@Column(name = "NUMBER", nullable = false)
+	private String number;
+
+	RELACIONAMENTO
+	
+	Uma pessoa pode ter muitos telefones
+	@ManyToOne(cascade = CascadeType.ALL)
+	@JoinColumn(name = "PERSON_ID")
+	private Person person;
+}
+
+****** Classe Person:
+@Entity
+@Table(
+	name = "PERSONS",
+	indexes = {@Index(columnList = "FIRST_NAME, LAST_NAME", name = "IDX_NAME", unique = true)}
+)
+public class Person implements Serializable{
+	
+	...colunas...
+
+	RELACIONAMENTOS
+
+	@OneToOne(cascade = CascadeType.ALL)
+	@JoinColumn(name = "DOCUMENT_ID") // Criara na tabela Document essa coluna, com esse nome
+	private Document document;
+
+	** este campo deve ter o mesmo nome do campo criado na tabela do relacionamento
+	@OneToMany(mappedBy = "person", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+	private List<Phone> phones;
+
+}
+
+**** Relacionamento Bidirecional
+**** mappedBy: diz com qual atributo da outra classe será relacinado
+

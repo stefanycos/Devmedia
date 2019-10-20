@@ -1,0 +1,7 @@
+PDO 
+
+* PDO (PHP Data Object): é uma estrutura para utilização de banco banco de dados
+usando o paradigma orientado a objetos.
+
+* Fornece uma estrutura com melhor performance e segurança para acesso a banco
+de dados

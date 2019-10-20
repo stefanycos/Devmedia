@@ -1,0 +1,9 @@
+CONFIGURANDO CONNECTOR J
+
+1 -  Baixar Connector J (MySQL)
+2 - Colar na pasta do projeto
+3 - Criar pasta Libs no projeto(só para organizar)
+4 - Colar arquivo (mysql-connector-java-5.1.39-bin) dentro da pasta libs (pode ser CRTL c e CRTL V no proprio Eclipse)
+5 - Botão Direito em cima do projeto -> Build Paht -> Configure Build Path
+6 - Aba Libraries -> Add JARs -> Selecionar arquivo (mysql-connector-java-5.1.39-bin)
+7 - Aba Order and Export -> Select All -> OK

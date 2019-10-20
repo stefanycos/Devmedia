@@ -1,0 +1,76 @@
+VIEWPORT
+
+Com a remodelação do Framework, faz-se necessáriousar a meta tag viewport. Esta TAG indica a a´rea onde o browser deve renderizar a página, sem o suo desta tag, o browser deixaria a página maior que a área disponivel no dispositivo
+
+
+MOBILE FIRST
+
+Este conceito diz que devemos criar nossos sites para dispositivos moveis, e depois nos preocuparemos com notebooks e desktops.
+
+
+CONTAINER
+É a parte mais externa, onde as colunas do aplicativo ficam
+
+
+
+--------------------------TABELAS---------------------------------------
+Classes:
+	table-striped: deixa a tabela cor sim cor não (cinza)
+	table-bordered: colcoa borda na tabela
+	table-condenced: deixa as linhas mais estreita
+	table-hover: deixa a linha cinza qdo passa o mouse
+
+Classes Contextuais: permite pintar as linhas da Tabela
+	active: deixa a linha cinza
+	success: deixa a linha verde
+	info: deixa a linha azul
+	warning: deixa a linha amarela
+	danger: deixa a linha vermelha
+
+Tabelas Responsivas
+	table-responsive: deixa a tabela reponsiva e se a tela for pequena cria um scroll horizontal na propria tabela
+
+--------------------------FORMULARIO---------------------------------------
+Classes e atributos:
+	sr-only: deixa o label invisivel na tela, porem visivel para disposotivos de leitura de tela
+	form-group: deve ser colocada em uma DIV, esta DIV deve aninhar todos os componetes do formulario, um a um
+	placeholder: coloca um texto dentro do input
+	form-horizontal: utilizado em conjunto com Grids, para alinnhar o itens do formulario na tela
+	has-success: adiciona alguns recursos de validação
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

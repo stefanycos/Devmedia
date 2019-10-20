@@ -1,0 +1,29 @@
+O que é?
+
+** É um framework JavaScript criado pelo Google, inicialmente projetado para aplicações Web, mas com o passar do tempo em outras versões para Mobile e Desktop.
+** A primeira versão do Angular se chama AngularJS e a segunda apenas Angular.
+
+Quais Linguagens Podem ser Utilizadas com Angular?
+TypeScript: criada pela microsoft para desenvolver no angular 2.
+Dart: criada pelo Google, parecido com o TypeScrip
+JavaScript
+
+Principais Ideias (Conceitos):
+1- Componentes: aplicações Angular 2, são uma composição de componentes. Um componente é formado por uma classe em Typescript e um template escrito em HTML que são responsaveis por parte da tela. Toda aplicação Angular tem um componente pai(raiz).
+2- Diretivas: as diretivas são usadas para alterar o DOM, estendendo as funcinalidades de um elemento.
+Diretivas Estruturais: essas alterarm o layout através da adição, remoção ou substituição de elementos na tela.
+Diretivas de Atributo: essas alteram o comportamento ou aparência apenas do elemento no qual ela foi declarada.
+3- Serviços: Encapsula toda lógica que não pode estar diretamente envolvida com a parte visual das telas. Por exemplo, serviços de logging, acesso a APIs e etc.
+4- Rotas: responsavel pela navegação entre as views de uma aplicação. Elas defienem qual view da aplicação e exibida.
+
+** Segue principalmente o modelo SPA (Single Page Applications)
+
+***SPA (Single Page Applications)
+São aplicações desenvolvidas em JavaScript que funcionam quase como se estivessem sendo executadas nativamente no desktop, codifica-se menos no server-side e mais no client-side. A aplicação fica quase toda no cliente, assim que o usuário acessa o site a aplicação e seus templates são armazenados no lado cliente, assim o usuário faz a transição entre os templates já carregados, evitando o reload de pagina.
+
+
+** Electron + AngularJS
+É utilizado para desenvolver aplicações para desktop, o electron é um framework desenvolvido pelo github que permite utilizar tecnologias de Web para desenvolver para desktop.
+
+** Ionic + AngularJS
+É utilizado para desenvolver aplicações para mobile, onde o Ionic já vem com Angular 2 embutido.

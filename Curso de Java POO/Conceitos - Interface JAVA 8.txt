@@ -1,0 +1,8 @@
+Java 8 - INTERFACES
+
+- Podem ter métodos abstratos, métodos do tipo default e métodso estaticos
+- Metodos abstratos não devem ser implemntados, mas os default e estaticos sim
+- As interfaces agora podem ser chamadas de funcionais.
+- Interfaces funcionais devem possuir um unico metodo abstrato
+- Se uma interface possuir mais de um metodo abstrato, não é considerada interface funcional
+- Imprilicitamente um interface funcional recebe  a anotação @FuncionalInterface

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Curso Bootstrap3 - Devmedia</title>
+        
+        <!-- define a viewport -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+        <meta charset="utf-8">
+        
+        <!-- adicionar CSS Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" media="all">
+        
+        <!-- css personalizado -->
+        <link href="css/estilo.css" rel="stylesheet" media="all">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                   <h1>Tabs</h1>
+                    
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="active"><a href="#">Título do link</a></li>
+                        <li><a href="#">Título do link</a></li>
+                        <li><a href="#">Título do link</a></li>
+                        
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                Título do link <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">Teste</a></li>
+                                <li><a href="#">Teste</a></li>
+                                <li><a href="#">Teste</a></li>
+                                <li><a href="#">Teste</a></li>
+                            </ul>
+                        </li>
+                        
+                    </ul>
+                    
+                    <h2>Justified</h2>
+                    
+                    <ul class="nav nav-tabs nav-justified" role="tablist">
+                        <li class="active"><a href="#">Título do link</a></li>
+                        <li><a href="#">Título do link</a></li>
+                        <li><a href="#">Título do link</a></li>
+                    </ul>
+                    
+                </div>  
+                
+                <div class="col-xs-12">
+                    <h1>Pills</h1>
+                    
+                    <ul class="nav nav-pills">
+                        <li class="active"><a href="#">Título do link</a></li>
+                        <li><a href="#">Título do link</a></li>
+                        <li><a href="#">Título do link</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                Título do link <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">Teste</a></li>
+                                <li><a href="#">Teste</a></li>
+                                <li><a href="#">Teste</a></li>
+                                <li><a href="#">Teste</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    
+                    <hr />
+                    
+                    <ul class="nav nav-pills nav-justified">
+                        <li class="active"><a href="#">Título do link</a></li>
+                        <li><a href="#">Título do link</a></li>
+                        <li class="disabled"><a href="#">Título do link</a></li>
+                    </ul>
+                    
+                    <hr />
+                    <ul class="nav nav-pills nav-stacked">
+                        <li class="active"><a href="#">Título do link</a></li>
+                        <li><a href="#">Título do link</a></li>
+                        <li><a href="#">Título do link</a></li>
+                        <li><a href="#">Título do link</a></li>
+                    </ul>
+                    
+                </div>
+                
+            </div>        
+        </div>
+        
+        <script src="js/jquery-1.11.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

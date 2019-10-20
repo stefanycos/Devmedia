@@ -1,0 +1,18 @@
+O que é Maven
+
+É uma ferramenta de construção de projetos, além disso é uma ferramenta para gerenciar dependencia.
+Tambem faz o versionamento do projeto.
+O Maven ajuda a:
+	- Gerar o código fonte 
+	- Gerar a documentação
+	- Compilar o código
+	- Pacotes de compilação
+	- Deploy da aplicação
+
+Todas essas ferramentas esta dentro do maven.
+
+POM.XML
+Contem as caracteristicas principais que o Maven utilizará na construção e manutenção da aplicação.
+
+Dependencias
+Quando adicionamos uma dependencia o Maven baixa os arquivos necessarios de um repositorio remoto, para um repositorio local.

@@ -1,0 +1,22 @@
+DTO - Data Transfer Object
+
+Auxilia na transferencia de dados de um lugar para outro
+
+
+DAO
+Data Access Objects
+
+-Objeto utilizado para acesssar dados
+
+BO
+Business Object
+- Trata a camada de negocio e serve para tratar com validações,
+e outras coisas
+
+JSP
+Java Server Page
+- Contem HTML, porem podemo incluir código Java
+
+Servlets
+- São classes especias do Java responsaveis por comunicar o browser com a aplicação JavaWeb
+- Temos que criar uma classe e extender uma classe chamada: HttpServlet

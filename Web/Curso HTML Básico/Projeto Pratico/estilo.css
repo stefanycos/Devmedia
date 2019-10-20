@@ -1,0 +1,114 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    background: url("imagens/Fundo.jpg");
+    font-family: sans-serif;
+}
+
+p{
+    text-align: justify;
+}
+
+h1{
+    font-family: cursive;
+}
+
+.endereco{
+    background: #DCDCDC;
+    padding: 10;
+    font-family: sans-serif;
+    border-radius: 5px;
+}
+
+#links{
+    text-decoration: none;
+    color: #4682B4;
+}
+
+#links:hover{
+    color: #696969;
+}
+
+.clear{
+    clear: both;
+    padding-top: 20;
+}
+
+.div_container{
+    width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.coluna1, .coluna2, .coluna3{
+    width: 275px;
+    height: 300px;
+    background: white;
+    margin-bottom: 10px;
+    float: left;
+    padding: 13px;
+    border-radius: 5px;
+}
+
+.coluna2{
+    margin-left: 18px;
+    margin-right: 18px;
+}
+
+.div_cabecalho{
+    background: url("imagens/bg_topo.jpg");
+    height: 160px;
+}
+
+.div_logomarca{
+    width: 200px;
+    float: left;
+    display: block;
+    padding-top: 40px;
+}
+
+.div_menu{
+    width: 600px;
+    float: right;
+    text-align: right;
+    padding-top: 60;
+    display: block;
+    font-size: 20px;
+}
+
+#menu{
+    text-decoration: none;
+    padding: 10px;
+    background: #808080;
+    color: white;
+    font-family: fantasy;
+}
+
+#menu:hover{
+    background: #4682B4;
+}
+
+.div_conteudo{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.div_rodape{
+    background: #808080;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    color: white;
+    font-size: 12px;
+}
+
+#slideshow a{
+    display: block;
+    padding: 5px;
+    background: white;
+    color: #000000;
+    float: left;
+}

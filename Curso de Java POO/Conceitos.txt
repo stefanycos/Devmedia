@@ -1,0 +1,79 @@
+DIAGRAMA DE CLASSES
+
+* É uma forma de representar a estrura e a relação das classes que serve de modelo para os objetos
+* É um tipo de documentação, serve tanto para criar e documentar a aplicação
+
+
+VISIBILIDADES
+
+- PRIVADO: São visiveis só na própria classe.
+
+# PROTECTED: São visiveis para qualquer classe, desde que no mesmo pacote.
+São visiveis em outro pacote apenas atraves da herança.	     
+
+~ DEFAULT: Ou visibildiade de pacote, atributo visivel para classes do mesmo pacote.
+
++ PUBLIC: Pode ser acessado por qualquer classe em qualquer situação.
+
+** Classes só pode ter os modificadores de acesso PUBLIC ou DEFAULT(A classe só poderá ser instaciada por classes do mesmo pacote)
+
+
+RELAÇÂO ENTRE CLASSES
+
+* Agregação - relacionamento todo/parte (Losango branco)
+Pode existir o objeto parte, mesmo sem edxistir o todo, por ex, pode existir um atleta(parte) msm
+q não exista um time(todo).
+
+* Composição - relacionamento todo (Losango preto)
+O objeto parte só existe se o todo existir, por ex, item pedido(parte) só existe se existr um pedido.
+
+
+HERANÇA - Seta branca
+Só podemos herdar metodos com modificadores de acesso: PUBLIC, PROTECTED ou DEFAULT
+
+INTERFACE - Seta Pontilhada
+Metodos sem a palavra PUBLIC e public e não default
+Não podemos implementar uma interface com outra interface, mas podemos herdar uma outra interface
+
+
+PRIMITIVOS vs OBJETOS
+
+int x Integer
+char x Character
+
+* A diferença é que nos tipos primitivos podemos armazenar apenas valores, e nos OBJETOS
+alem de armazenar valores, podemos utilizar os metodos oferecidos. 
+Uma varialvel do tipo objeto quando inicializada pode conter: NULL(Character...),
+0 Integer ou 0.0 Double/Float
+
+
+CONSTANTES
+
+*Declaração:
+public static final String OURO = "ouro";
+Usamos a apalavra static para poder ter acesso a constante mesmo sem instanciar a classe.
+
+
+CAST
+* UP CAST -  Da subclasse para subclasse - este é feito de maneira implicita
+* DOWN CAST - Do Superclasse para Subclasse
+
+METODOS ESTATICOS
+- São executados antes do metodo construtor
+- Não precisam de um objeto para serem chamados
+
+
+CLASSES ANINHADAS
+* É uma rotina encapsulada dentro de outra
+* É quando temos uma classe declarada e dentro dela nós declaramos outras classes
+TIPOS de CLASSES ANINHADS
+- Internas Estáticas - não tem acesso ao membros de instancia, só aos membros staticos
+- Interna Regulares
+- Interna de Método Local
+- Interna Anonima - não possui um nome e sim uma referencia a um obejto
+
+
+
+
+
+

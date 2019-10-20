@@ -1,0 +1,13 @@
+Framework ORM 
+Nasceram com o intuito de substituir o JDBC, pois utilizar só o JDBC era muito trabalhoso, era necessario trabalhar diretamente com as colunas e tabelas do banco de dados, já com o framework ORM trabalha-se com objetos, além de não trabalhar com selects diretamente do banco de dados, as consultas são feitas atraves dos atributos das classes.
+
+** Implementação: é o framework ORM
+** Especificação: serve para criar um padrão entre os frameworks que utilizam a implementação ORM.
+
+** No curso aprenderemos a utilizar o Spring-Data JPA uma forma sofisticada para trabalhar com CRUD em bancos de dados relacionais.
+
+O que é JPA (Java Persistence API)?
+É uma especificação java, que especifica regras que padronizam os frameworks ORM. Fornece interfaces e metodos para existir uma portabilidade entre todos os frameworks ORM, como hibernate, eclipse link e etc.
+
+Mapeamento
+É como o framework relaciona as classes e os atributos com as tabelas e colunas do banco de dados.

@@ -1,0 +1,57 @@
+**** Criação de um mapeamento OneToOne
+**** Uma Pessoa para Um Documento
+**** Mapeamento da classe Person e Document (Exemplo)
+**** Relacionamento OneToOne
+
+** O relacionamento Um para Um pode ocorrer de maneira Uni ou Bi direcional
+Uni: Colocamos a coluna IdDocument na tabela person, e quando carregamos uma pessoa ela virá com o Documento
+Bi: Colocamos a coluna IdPerson em Document e a coluna IdDocument em person, assim se carreagrmos um documento ele vem com a Pessoa e se carregarmos a Pessoa ela vem com o Documento
+** Neste caso utilizaremos é o Relacionamento Unidirecional na Tabela Person
+
+****** Classe Document:
+@Entity
+@Table(name = "DOCUMENTS")
+public class Document implements Serealizable{
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "ID_DOCUMENT")
+	privete Long id;
+
+	@Column(name = "CPF", nullable = false, unique = true, lenght = 14)
+	private String cpf
+
+	@Column(name = "RG", unique = true)
+	private Integer rg;
+}
+
+****** Classe Person:
+@Entity
+@Table(
+	name = "PERSONS",
+	indexes = {@Index(columnList = "FIRST_NAME, LAST_NAME", name = "IDX_NAME", unique = true)}
+)
+public class Person implements Serializable{
+	
+	...colunas...
+
+	RELACIONAMENTO
+
+	@OneToOne(cascade = CascadeType.ALL)
+	@JoinColumn(name = "DOCUMENT_ID") // Criara na tabela Document essa coluna, com esse nome
+	private Document document;
+
+}
+
+*** Poderiamos colocar tambem alguns cascades especificos, utilizando um array
+Ex: 
+@OneToOne(cascade = {CascadeType.PERSIST, CascadeType.MERGE}, fetch = FetchType.EAGER)
+
+*** Fetch ***
+Paramentro utilziado para consulta, temos o LAZY e o EAGER
+LAZY (Preguiçoso): economiza recursos de memória, pois consultamos Person, porem o Document só será carregado se
+o chamarmos em algum momento do código
+EAGER (Ansioso): todas as consultas de um objeto relacionado com outro são feitos de uma unica vez,
+ou seja, quando consultarmos Person, já traremos automaticamente o Document junto
+
+

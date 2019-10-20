@@ -1,0 +1,34 @@
+PACOTES (packages)
+
+- Fazem parte do nome de uma classe
+- Organizam as classes por finalidade
+- Evitar conflito entre classes de mesmo nome
+- Usar endereço da web de traz para frente e em seguida o nome do projeto
+Exemplo: devmedia.com.br Fica:
+	br.com.devmedia
+	br.com.devmedia.curso.dao
+	br.com.devmedia.curso.service
+
+O Nome de Classes, Interfaces e Enums 
+**Utiliza CamelCase
+
+- Classes e Interfaces: Primeira Letra em Maiuscula (Pessoa, PessoaFisica)
+- Enums: Todas as letras mausculas (ROSA, LArANJA, AZUL)
+
+
+O nome de variaveis e metodos
+**Utiliza lowerCamelCase
+
+- Primeira em minusculo (String nomeDoMeio)
+
+Nomes de Constantes
+**Utiliza UPPERCASE
+
+- Todas as palavras em maiusculas e quando mais de uma paravra utiliza _(underline)
+- Ex: NUMERO_X
+
+Nome de métodos boleanos
+**Trocamos get por is
+
+-Ex: public boolean isCasado(){}
+

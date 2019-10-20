@@ -1,0 +1,53 @@
+<html ng-app>
+    <head>
+        <meta charset="utf-8" />
+        <title>Aula 03 - Introdução ao Java Script</title>
+        <script>
+            
+           
+            var total = 1+2;
+            console.log("Resultado: " + total );
+            
+            //Criação de Objeto
+            var pessoa = {
+                nome : "Oliver Queen",
+                idade : 30,
+                status : false
+            }
+            
+            
+            function carrega(){
+                document.getElementById("campo").value = total; 
+            }
+            
+            
+            console.log(pessoa);
+            
+            var pessoas = [];
+            
+            pessoas.push(pessoa);
+            pessoas.push(pessoa);
+            pessoas.push(pessoa);
+            pessoas.push(pessoa);
+            pessoas.push(pessoa);
+            
+            console.log(pessoas);
+            
+            //If - Else
+            if (pessoa.status == true){
+                console.log("O usuário " +pessoa.nome + " está ativo");
+            }else{
+                 console.log("O usuário " +pessoa.nome + " está bloqueado");
+            }
+            
+            //LAço de Repetição
+            for(var i = 1; i<=5; i++){
+                document.write("<p>"+i+"</p>");
+            }
+            
+        </script>
+    </head>
+    <body>
+        <input value="" id="campo" onload="carrega()" />
+    </body>
+</html>

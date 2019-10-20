@@ -1,0 +1,68 @@
+**** Criação de um mapeamento ManyToMany
+**** Muitas Pessoas Para Muitos Endereços
+**** Mapeamento da classe Person e Address (Exemplo)
+
+
+****** Classe Address
+@Entity
+@Table(name = "ADRESSESS")
+public class Address implements Serializable{
+
+	public enum TypeAddress{
+		COMERCIAL, RESIDENCIAL
+	}
+
+	private Long id;
+	
+	private String city;
+
+	private String street;
+
+	@Enumerated(EnumType.STRING)
+	@Column(name = "TYPE_ADDRESS", nullable = false)
+	private TypeAddress type
+
+	
+	@ManyToMany(fetch = FetchType.EAGER)
+	** O name neste caso é o nome da tabela do relacionamento, pois como é NxN criasse outra tabela de relacionamento
+	@JoinTable(name = "PERSON_ADDRESSES",
+		joinColumns = @JoinColumn(name = "ID_ADDRESS"),
+		inverseJoinColumn = @JoinColumn(name = "ID_PERSON")) // Junção da tabela que possui o outro Id	
+	private List<Person> persons // pois cada endereço pode pertencer a varias pessoas
+
+}
+
+
+****** Classe Person:
+@Entity
+@Table(
+	name = "PERSONS",
+	indexes = {@Index(columnList = "FIRST_NAME, LAST_NAME", name = "IDX_NAME", unique = true)}
+)
+public class Person implements Serializable{
+	
+	...colunas...
+
+	RELACIONAMENTOS
+
+	@OneToOne(cascade = CascadeType.ALL)
+	@JoinColumn(name = "DOCUMENT_ID") // Criara na tabela Document essa coluna, com esse nome
+	private Document document;
+
+	** este campo deve ter o mesmo nome do campo criado na tabela do relacionamento
+	@OneToMany(mappedBy = "person", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+	private List<Phone> phones;
+
+	
+	@ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+	@JoinTable(name = "PERSON_ADDRESSES",
+		joinColumns = @JoinColumn(name = "ID_PERSON"),
+		inverseJoinColumn = @JoinColumn(name = "ID_ADDRESS")) 
+	private List<Address> adreeses;
+
+}
+
+
+*** A partir deste mapeamento será criada uma terceira coluna que terá:
+IdAddress PK
+IdPerson PK

@@ -1,0 +1,57 @@
+O que é Lambda?
+
+O que é Functional Programming?
+Em ciência da computação, programação funcional é um paradigma de programação que trata a compuação
+como uma avaliação de funções matemáticas e que evita estados ou dados mutaveis.
+Ela enfatiza a aplicação de funções, em contraste da programação imperativa, que enfariza mudanças no estado do programa.
+
+
+Vantagens
+* Limpa o código
+* Fornece abstrações para problemas complexos muitas vezes em uma linha
+* Presentes nas linguagens: C#, Java e Python
+* Código mais simples e legivel
+* Simplifica operações em dados, em especial coleções
+* Sintaxe de fácil memorização
+
+Desvantagens
+* Funções anônimas podem gerar problemas na hora de depurar o código
+* Quando há muitos argumentos, pode complicar mias do que ajudar
+
+Exemplo - 1
+for(Funcionario f : funcionarios){
+	System.out.println(f.getNome() + " : " + f.getSalario());
+}
+
+Com Lambda:
+funcionarios.forEach((Funcionario f) -> System.out.println(f.getNome() + " : " + f.getSalario()));
+
+
+Exemplo - 2
+for(Funcionario f : funcionarios){
+	if(f.getSalario() > 1903){
+		funcionariosQuePagamIr.add(f);
+	}
+}
+
+Com Lambda:
+funcionarios.forEach((f) ->{
+	if(f.getSalario() > 1903){
+		funcionariosQuePagamIr.add(f);
+	}
+}
+
+*** Stream
+Filter: filtra a informação, dada uma determinada condição.
+Map: pega os dados filtrados, que atendem a condição, trazendo um dos atributos desses dados.
+Collect: Monta a lista trazendo a coleção de streams
+Exemplo:
+
+List<String> funcionariosQuePagamIr = funcionarios.stream()
+	//A condição desse filtro é todos os salarios maior que 1903
+	.filter(f -> .getSalario() > 1903)
+	//Pega o nome de cada funcionario
+	.map(f -> f.getNome())
+	//Irá retornar uma lista de Strings o toList faz isso, retorna String pq o List declarado é do tipo String
+	.collect(Collectors.toList());
+

@@ -1,0 +1,14 @@
+﻿<table border="1" cellpadding="5" cellspacing="5" width="550">
+	<tr>
+		<td>ID</td>
+		<td>Nome</td>
+		<td>Idade</td>
+	</tr>
+	{loop="dados"}
+		<tr>
+			<td>{$value.id}</td>
+			<td>{$value.nome}</td>
+			<td>{$value.idade}</td>
+			</tr>
+	{/loop}
+</table>
